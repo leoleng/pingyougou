@@ -62,7 +62,7 @@ export default {
         const { data: res } = await this.$http.post('login', this.loginFrom)
 
         if (res.meta.status !== 200) {
-          return this.$message.error('登陆失败')
+          // return this.$message.error('登陆失败')
         }
         this.$message.success('登陆成功')
         sessionStorage.setItem('token', res.data.token)
