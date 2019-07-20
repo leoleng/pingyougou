@@ -141,7 +141,7 @@ export default {
       }
       this.ordersList = res.data.goods
       this.total = res.data.total
-      console.log(res)
+      // console.log(res)
     },
     async showDialogVisible() {
       const { data: res } = await this.$http.get('/kuaidi/1106975712662')
